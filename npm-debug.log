@@ -5,31 +5,105 @@
 2 info using npm@3.10.10
 3 info using node@v6.10.0
 4 verbose publish [ '.' ]
-5 verbose stack Error: Failed to parse json
-5 verbose stack Unexpected token '}' at 13:2
-5 verbose stack 	},
-5 verbose stack 	^
-5 verbose stack     at parseError (E:\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:390:11)
-5 verbose stack     at parseJson (E:\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:79:23)
-5 verbose stack     at E:\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
-5 verbose stack     at E:\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
-5 verbose stack     at tryToString (fs.js:455:3)
-5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
-6 verbose cwd E:\nodejs\node_modules\helloworld
-7 error Windows_NT 6.1.7601
-8 error argv "E:\\nodejs\\node.exe" "E:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
-9 error node v6.10.0
-10 error npm  v3.10.10
-11 error file E:\nodejs\node_modules\helloworld\package.json
-12 error code EJSONPARSE
-13 error Failed to parse json
-13 error Unexpected token '}' at 13:2
-13 error 	},
-13 error 	^
-14 error File: E:\nodejs\node_modules\helloworld\package.json
-15 error Failed to parse package.json data.
-15 error package.json must be actual JSON, not just JavaScript.
-15 error
-15 error This is not a bug in npm.
-15 error Tell the package author to fix their package.json file. JSON.parse
-16 verbose exit [ 1, true ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'E:\\nodejs\\node_modules\\helloworld',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Andrew\AppData\Roaming\npm-cache\helloworld\0.1.1\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Andrew\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle helloworld@0.1.1~prepublish: helloworld@0.1.1
+11 silly lifecycle helloworld@0.1.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Andrew\\AppData\\Roaming\\npm-cache\\helloworld\\0.1.1\\package.tgz',
+12 verbose tar pack   'E:\\nodejs\\node_modules\\helloworld' ]
+13 verbose tarball C:\Users\Andrew\AppData\Roaming\npm-cache\helloworld\0.1.1\package.tgz
+14 verbose folder E:\nodejs\node_modules\helloworld
+15 verbose addLocalTarball adding from inside cache C:\Users\Andrew\AppData\Roaming\npm-cache\helloworld\0.1.1\package.tgz
+16 verbose correctMkdir C:\Users\Andrew\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd helloworld@0.1.1
+18 verbose afterAdd C:\Users\Andrew\AppData\Roaming\npm-cache\helloworld\0.1.1\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Andrew\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Andrew\AppData\Roaming\npm-cache\helloworld\0.1.1\package\package.json written
+21 silly publish { author: { name: 'Andrew' },
+21 silly publish   name: 'helloworld',
+21 silly publish   version: '0.1.1',
+21 silly publish   description: 'this is a hello word test',
+21 silly publish   main: 'helloworld',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/croaker5/helloworld.git' },
+21 silly publish   keywords: [ 'helloworld' ],
+21 silly publish   dependencies: {},
+21 silly publish   engines: { node: '*' },
+21 silly publish   gitHead: '20efc1b11ad29b2f5659f694251b21797f2cec9c',
+21 silly publish   bugs: { url: 'https://github.com/croaker5/helloworld/issues' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   homepage: 'https://github.com/croaker5/helloworld#readme',
+21 silly publish   _id: 'helloworld@0.1.1',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '3afea78826c22e30337acd0f1f00f9ddc95e6603',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name helloworld
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'helloworld',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'helloworld',
+26 silly mapToRegistry   name: 'helloworld',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/helloworld
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Andrew\AppData\Roaming\npm-cache\helloworld\0.1.1\package.tgz
+30 verbose request uri https://registry.npmjs.org/helloworld
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 22:44:26
+33 verbose request using bearer token for auth
+34 verbose request id 34a7f85bab495a71
+35 http request PUT https://registry.npmjs.org/helloworld
+36 http 403 https://registry.npmjs.org/helloworld
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '104',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 04 Mar 2017 14:44:31 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-hkg6824-HKG',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1488638670.383538,VS0,VE741',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\Andrew\AppData\Roaming\npm-cache\registry.npmjs.org\helloworld on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "helloworld". Are you logged in as the correct user? : helloworld
+40 verbose stack     at makeError (E:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (E:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (E:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (E:\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (E:\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (E:\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid helloworld
+43 verbose cwd E:\nodejs\node_modules\helloworld
+44 error Windows_NT 6.1.7601
+45 error argv "E:\\nodejs\\node.exe" "E:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.10.0
+47 error npm  v3.10.10
+48 error code E403
+49 error you do not have permission to publish "helloworld". Are you logged in as the correct user? : helloworld
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
