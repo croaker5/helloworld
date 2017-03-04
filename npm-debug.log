@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\nodejs\\node.exe',
+1 verbose cli   'E:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 verbose publish [ '.' ]
+5 verbose stack Error: Failed to parse json
+5 verbose stack Unexpected token '}' at 13:2
+5 verbose stack 	},
+5 verbose stack 	^
+5 verbose stack     at parseError (E:\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:390:11)
+5 verbose stack     at parseJson (E:\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:79:23)
+5 verbose stack     at E:\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
+5 verbose stack     at E:\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
+5 verbose stack     at tryToString (fs.js:455:3)
+5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
+6 verbose cwd E:\nodejs\node_modules\helloworld
+7 error Windows_NT 6.1.7601
+8 error argv "E:\\nodejs\\node.exe" "E:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+9 error node v6.10.0
+10 error npm  v3.10.10
+11 error file E:\nodejs\node_modules\helloworld\package.json
+12 error code EJSONPARSE
+13 error Failed to parse json
+13 error Unexpected token '}' at 13:2
+13 error 	},
+13 error 	^
+14 error File: E:\nodejs\node_modules\helloworld\package.json
+15 error Failed to parse package.json data.
+15 error package.json must be actual JSON, not just JavaScript.
+15 error
+15 error This is not a bug in npm.
+15 error Tell the package author to fix their package.json file. JSON.parse
+16 verbose exit [ 1, true ]
