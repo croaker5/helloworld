@@ -1,0 +1,13 @@
+{
+	"author": "Andrew",
+	"name" : "helloworld",
+	"version" : "0.1.1" ,
+	"description" : "this is a hello word test",
+	"main" : "helloworld" ,
+	"dependencies" : {} ,
+	"engines" : {
+	    "node" : "*"
+	}
+
+
+}
