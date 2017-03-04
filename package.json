@@ -4,6 +4,13 @@
 	"version" : "0.1.1" ,
 	"description" : "this is a hello word test",
 	"main" : "helloworld" ,
+	"repository":{
+		"type":"git",
+		"url":"https://github.com/croaker5/helloworld.git"
+	},
+	"keywords":{
+		"helloworld"
+	},
 	"dependencies" : {} ,
 	"engines" : {
 	    "node" : "*"
